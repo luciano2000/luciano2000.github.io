@@ -1,510 +1,472 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7FJZPQWWXQ"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-        
-          gtag('config', 'G-7FJZPQWWXQ');
-        </script>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-        <!--========== BOX ICONS ==========-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7FJZPQWWXQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-        <!--========== CSS ==========-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+        gtag('config', 'G-7FJZPQWWXQ');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Luciano Rocha</title>
-    </head>
-    <body>
-        <!--========== HEADER ==========-->
-        <header class="l-header" id="header">
-            <nav class="nav bd-container">
-                <a href="#" class="nav__logo">Luciano</a>
+    <!--========== BOX ICONS ==========-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">
-                                <i class='bx bx-home nav__icon' ></i>Home
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#profile" class="nav__link">
-                                <i class='bx bx-user nav__icon' ></i>Perfil
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#education" class="nav__link">
-                                <i class='bx bx-book nav__icon' ></i>Graduação
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#skills" class="nav__link">
-                                <i class='bx bx-receipt nav__icon' ></i>Habilidades
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#experience" class="nav__link">
-                                <i class='bx bx-briefcase-alt nav__icon' ></i>Experiencia
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#certificates" class="nav__link">
-                                <i class='bx bx-award nav__icon' ></i>Certificados
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#references" class="nav__link">
-                                <i class='bx bx-link-external nav__icon' ></i>Referencias
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-grid-alt'></i>
-                </div>
-            </nav>
-        </header>
+    <title>Luciano Rocha</title>
+</head>
 
-        <main class="l-main bd-container">
-            <!-- All elements within this div, is generated in PDF -->
-            <div class="resume" id="area-cv">
-                <div class="resume__left">
-                    <!--========== HOME ==========-->
-                    <section class="home" id="home">
-                        <div class="home__container section bd-grid">
-                            <div class="home__data bd-grid">
-                                <img src="assets/img/eu.jpeg" alt="" class="home__img">
+<body>
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">Luciano</a>
 
-                                <h1 class="home__title">LUCIANO <b>ROCHA</b></h1>
-                                <h3 class="home__profession">Ad Operations Manager<br>Programmatic Head</h3>
-
-                                <div>
-                                    <!-- Button to download your CV saved in the pdf folder. Available for mobile -->
-                                    <a download="" href="assets/pdf/ResumeCv.pdf" class="home__button-movil">Dowload Cv</a>
-                                </div>
-                            </div>   
-    
-    
-                            <div class="home__address bd-grid">
-                                <span class="home__information">
-                                    <i class='bx bx-map home__icon' ></i> Vila Mascote - São Paulo
-                                </span>
-                                <span class="home__information">
-                                    <i class='bx bx-envelope home__icon' ></i> rochas@gmail.com
-                                </span>
-                                <span class="home__information">
-                                    <i class='bx bx-phone home__icon' ></i> +55 (11) 98643-7830
-                                </span>
-                            </div>
-                        </div>
-
-                        <!-- Theme change button -->
-                        <i class='bx bx-moon change-theme' title="Theme" id="theme-button"></i>
-
-                        <!-- Button to generate and download the pdf. Available for desktop. -->
-                        <i class='bx bx-download generate-pdf' title="Generate PDF" id="resume-button"></i>
-                    </section>
-
-                    <!--========== SOCIAL ==========-->
-                    <section class="social section">
-                        <h2 class="section-title">SOCIAL</h2>
-                        
-                        <div class="social__container bd-grid">
-                            <a href="https://www.linkedin.com/in/luciano2000" target="_blank" class="social__link">
-                                <i class='bx bxl-linkedin-square social__icon'></i>
-                                @luciano2000
-                            </a>
-                            <a href="https://www.facebook.com/luciano2000" target="_blank" class="social__link">
-                                <i class='bx bxl-facebook social__icon'></i>
-                                @luciano2000
-                            </a>
-                            <a href="https://www.instagram.com/luciano2000" target="_blank" class="social__link">
-                                <i class='bx bxl-instagram social__icon'></i>
-                                @luciano2000
-                            </a>
-                            <a href="https://www.twitter.com/luciano2000" target="_blank" class="social__link">
-                                <i class='bx bxl-twitter social__icon'></i>
-                                @luciano2000
-                            </a>
-                        </div>
-                    </section>
-
-                    <!--========== PROFILE ==========-->
-                    <section class="profile section" id="profile">
-                        <h2 class="section-title">Profile</h2>
-                        <p class="profile__description">With over 24 years of experience in the digital advertising industry, I have led digital media teams in both direct and programmatic campaign sales. Additionally, I have led teams in the development of digital advertising products. I have created and optimized processes within the field based on best practices, as well as implemented technical improvements to ensure good practices and optimize ad loading speed. I maintain excellent relationships with clients and agencies, and I have been responsible for analyzing the feasibility and integration of monetization partners, managing all partner delivery projects. Furthermore, I have managed media buying teams in agencies, ensuring the best performance and optimization for clients, consistently meeting key performance indicators (KPIs).</p>
-                    </section>
-                    
-                    <!--========== EDUCATION ==========-->
-                    <section class="education section" id="education">
-                        <h2 class="section-title">Education</h2>
-                        
-                        <div class="education__container bd-grid">
-                            <div class="education__content">
-                                <div class="education__time">
-                                    <span class="education__rounder"></span>
-                                    <span class="education__line"></span>
-                                </div>
-                                
-                                <div class="education__data bd-grid">
-                                    <h3 class="education__title">MASTER OF DESIGN</h3>
-                                    <span class="education__studies">University of Studies</span>
-                                    <span class="education__year">2010 - 2015</span>
-                                </div>
-                            </div>
-
-                            <div class="education__content">
-                                <div class="education__time">
-                                    <span class="education__rounder"></span>
-                                    <span class="education__line"></span>
-                                </div>
-                                
-                                <div class="education__data bd-grid">
-                                    <h3 class="education__title">WEB DEVELOPER</h3>
-                                    <span class="education__studies">Institute Studies</span>
-                                    <span class="education__year">2016 - 2019</span>
-                                </div>
-                            </div>
-
-                            <div class="education__content">
-                                <div class="education__time">
-                                    <span class="education__rounder"></span>
-                                    <!-- <span class="education__line"></span> -->
-                                </div>
-                                
-                                <div class="education__data bd-grid">
-                                    <h3 class="education__title">MASTER IN UI/UX</h3>
-                                    <span class="education__studies">Institute Studies</span>
-                                    <span class="education__year">2019 - 2021</span>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-
-                    <!--========== SKILLS  ==========-->
-                    <section class="skills section" id="skills">
-                        <h2 class="section-title">Skills</h2>
-
-                        <div class="skills__content bd-grid">
-                            <ul class="skills__data">
-                                <li class="skills__name">
-                                    <span class="skills__circle"></span> Html
-                                </li>
-                                <li class="skills__name">
-                                    <span class="skills__circle"></span> Css
-                                </li>
-                                <li class="skills__name">
-                                    <span class="skills__circle"></span> Sass
-                                </li>
-                                <li class="skills__name">
-                                    <span class="skills__circle"></span> JavaScript
-                                </li>
-                            </ul>
-                            
-                            <ul class="skills__data">
-                                <li class="skills__name">
-                                    <span class="skills__circle"></span> Angular
-                                </li>
-                                <li class="skills__name">
-                                    <span class="skills__circle"></span> Firebase
-                                </li>
-                                <li class="skills__name">
-                                    <span class="skills__circle"></span> React
-                                </li>
-                            </ul>
-                        </div>
-                    </section>
-                </div>
-
-                <div class="resume__right">
-                    <!--========== EXPERIENCE ==========-->
-                    <section class="experience section" id="experience">
-                        <h2 class="section-title">Experience</h2>
-
-                        <div class="experience__container bd-grid">
-
-                            <div class="experience__content">
-                                <div class="experience__time">
-                                    <span class="experience__rounder"></span>
-                                    <span class="experience__line"></span>
-                                </div>
-                                <div class="experience__data bd-grid">
-                                    <h3 class="experience__title">BRAZIL ACCOUNT MANAGER</h3>
-                                    <span class="experience__company">From 06/2024 to present | Dailymotion.</span>
-                                    <p class="experience__description">Work in this company dedicating the best responsibility in the area that corresponds, delivering the best results for the company and improving productivity.</p>
-                                </div>                                
-                            </div>    
-                            <div class="experience__content">
-                                <div class="experience__time">
-                                    <span class="experience__rounder"></span>
-                                    <span class="experience__line"></span>
-                                </div>
-                                <div class="experience__data bd-grid">
-                                    <h3 class="experience__title">FOUNDER / CEO</h3>
-                                    <span class="experience__company">From 05/2023 to present | AD TEC.</span>
-                                    <p class="experience__description">Work in this company dedicating the best responsibility in the area that corresponds, delivering the best results for the company and improving productivity.</p>
-                                </div>                                
-                            </div>                            
-                            <div class="experience__content">
-                                <div class="experience__time">
-                                    <span class="experience__rounder"></span>
-                                    <span class="experience__line"></span>
-                                </div>
-                                
-                                <div class="experience__data bd-grid">
-                                    <h3 class="experience__title">HEAD OF ADOPS</h3>
-                                    <span class="experience__company">From 05/2022 to 05/2023 | exame s.a.</span>
-                                    <p class="experience__description">Work in this company dedicating the best responsibility in the area that corresponds, delivering the best results for the company and improving productivity.</p>
-                                </div>
-
-                            </div>
-
-                            <div class="experience__content">
-                                <div class="experience__time">
-                                    <span class="experience__rounder"></span>
-                                    <span class="experience__line"></span>
-                                </div>
-                                
-                                <div class="experience__data bd-grid">
-                                    <h3 class="experience__title">ADOPS MANAGER</h3>
-                                    <span class="experience__company">From 07/2020 to 05/2022 | CNN BRAIL</span>
-                                    <p class="experience__description">Work in this company dedicating the best responsibility in the area that corresponds, delivering the best results for the company and improving productivity.</p>
-                                </div>
-                            </div>
-
-                            <div class="experience__content">
-                                <div class="experience__time">
-                                    <span class="experience__rounder"></span>
-                                    <span class="experience__line"></span>
-                                </div>
-                                
-                                <div class="experience__data bd-grid">
-                                    <h3 class="experience__title">DIGITAL MEDIA MANAGER</h3>
-                                    <span class="experience__company">From 03/2020 to 07/2021 | WUNDERMAN THOMPSON</span>
-                                    <p class="experience__description">Work in this company dedicating the best responsibility in the area that corresponds, delivering the best results for the company and improving productivity.</p>
-                                </div>
-                            </div>
-
-                            <div class="experience__content">
-                                <div class="experience__time">
-                                    <span class="experience__rounder"></span>
-                                    <span class="experience__line"></span>
-                                </div>
-                                
-                                <div class="experience__data bd-grid">
-                                    <h3 class="experience__title">ADOPS MANAGER</h3>
-                                    <span class="experience__company">From 11/2018 to 03/2020 | SUPPORTCOMM</span>
-                                    <p class="experience__description">Work in this company dedicating the best responsibility in the area that corresponds, delivering the best results for the company and improving productivity.</p>
-                                </div>
-                            </div>
-
-                            <div class="experience__content">
-                                <div class="experience__time">
-                                    <span class="experience__rounder"></span>
-                                    <span class="experience__line"></span>
-                                </div>
-                                
-                                <div class="experience__data bd-grid">
-                                    <h3 class="experience__title">ADOPS DIRECTOR</h3>
-                                    <span class="experience__company">From 10/2017 to 11/2018 | NOBETA</span>
-                                    <p class="experience__description">Work in this company dedicating the best responsibility in the area that corresponds, delivering the best results for the company and improving productivity.</p>
-                                </div>
-                            </div>
-
-                            <div class="experience__content">
-                                <div class="experience__time">
-                                    <span class="experience__rounder"></span>
-                                    <span class="experience__line"></span>
-                                </div>
-                                
-                                <div class="experience__data bd-grid">
-                                    <h3 class="experience__title">ADOPS MANAGER</h3>
-                                    <span class="experience__company">From 03/2016 to 10/2017 | HAVAS / Affiperf</span>
-                                    <p class="experience__description">Work in this company dedicating the best responsibility in the area that corresponds, delivering the best results for the company and improving productivity.</p>
-                                </div>
-                            </div>
-
-                            <div class="experience__content">
-                                <div class="experience__time">
-                                    <span class="experience__rounder"></span>
-                                    <span class="experience__line"></span>
-                                </div>
-                                
-                                <div class="experience__data bd-grid">
-                                    <h3 class="experience__title">SENIOR PROGRAMMATIC BUYER</h3>
-                                    <span class="experience__company">From 05/2015 to 10/2015 | IGNITION ONE</span>
-                                    <p class="experience__description">Work in this company dedicating the best responsibility in the area that corresponds, delivering the best results for the company and improving productivity.</p>
-                                </div>
-                            </div>                            
-
-                            <div class="experience__content">
-                                <div class="experience__time">
-                                    <span class="experience__rounder"></span>
-                                    <span class="experience__line"></span>
-                                </div>
-                                
-                                <div class="experience__data bd-grid">
-                                    <h3 class="experience__title">ADOPS MANAGER</h3>
-                                    <span class="experience__company">From 11/2014 to 04/2015 | IMOVELWEB</span>
-                                    <p class="experience__description">Work in this company dedicating the best responsibility in the area that corresponds, delivering the best results for the company and improving productivity.</p>
-                                </div>
-                            </div>                            
-                            
-                            <div class="experience__content">
-                                <div class="experience__time">
-                                    <span class="experience__rounder"></span>
-                                    <span class="experience__line"></span>
-                                </div>
-                                
-                                <div class="experience__data bd-grid">
-                                    <h3 class="experience__title">PRODUCT MANAGER</h3>
-                                    <span class="experience__company">From 06/2014 to 11/2014 | AUNICA DIGITAL SOLUTIONS</span>
-                                    <p class="experience__description">Work in this company dedicating the best responsibility in the area that corresponds, delivering the best results for the company and improving productivity.</p>
-                                </div>
-                            </div>                            
-                            
-
-                            <div class="experience__content">
-                                <div class="experience__time">
-                                    <span class="experience__rounder"></span>
-                                    <span class="experience__line"></span>
-                                </div>
-                                
-                                <div class="experience__data bd-grid">
-                                    <h3 class="experience__title">ADOPS SUPERVISOR</h3>
-                                    <span class="experience__company">From 01/2014 to 04/2014 | NZN GROUP</span>
-                                    <p class="experience__description">Work in this company dedicating the best responsibility in the area that corresponds, delivering the best results for the company and improving productivity.</p>
-                                </div>
-                            </div>
-
-                            <div class="experience__content">
-                                <div class="experience__time">
-                                    <span class="experience__rounder"></span>
-                                    <!-- <span class="experience__line"></span> -->
-                                </div>
-                                
-                                <div class="experience__data bd-grid">
-                                    <h3 class="experience__title">APPLICATIONS ADMIN</h3>
-                                    <span class="experience__company">From 12/1998 to 10/2013 | UOL</span>
-                                    <p class="experience__description">Work in this company dedicating the best responsibility in the area that corresponds, delivering the best results for the company and improving productivity.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!--========== CERTIFICATES ==========-->
-                    <section class="certificate section" id="certificates">
-                        <h2 class="section-title">Certificates</h2>
-
-                        <div class="certificate__container bd-grid">
-                            <div class="certificate__content">
-                                <h3 class="certificate__title">Certified for compliance in the work area (2012)</h3>
-                                <p class="certificate__description">For meeting the expectations of leading the team to work the specified tasks in the labor field.</p>
-                            </div>
-
-                            <div class="certificate__content">
-                                <h3 class="certificate__title">Certificate of attendance on computer technology.</h3>
-                                <p class="certificate__description">For meeting the expectations of leading the team to work the specified tasks in the labor field.</p>
-                            </div>
-                            
-                            <div class="certificate__content">
-                                <h3 class="certificate__title">Achievement medal for productivity excellence during the year (2019)</h3>
-                                <p class="certificate__description">For meeting the expectations of leading the team to work the specified tasks in the labor field.</p>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!--========== REFERENCES ==========-->
-                    <section class="references section" id="references">
-                        <h2 class="section-title">References</h2>
-
-                        <div class="references__container bd-grid">
-                            <div class="references__content bd-grid">
-                                <span class="references__subtitle">Sr. Director</span>
-                                <h3 class="references__title">Mr. Clay Doe</h3>
-                                <ul class="references__contact">
-                                    <li>Phone: 999-888-777</li>
-                                    <li>Email: fake@email.com</li>
-                                </ul>
-                            </div>
-
-                            <div class="references__content bd-grid">
-                                <span class="references__subtitle">Mag. Developer</span>
-                                <h3 class="references__title">Mr. Robbinson Bass</h3>
-                                <ul class="references__contact">
-                                    <li>Phone: 999-888-777</li>
-                                    <li>Email: user@email.com</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!--========== LANGUAGES ==========-->
-                    <section class="languages section">
-                        <h2 class="section-title">Languages</h2>
-
-                        <div class="languages__container">
-                            <ul class="languages__content bd-grid">
-                                <li class="languages__name">
-                                    <span class="languages__circle"></span>Portuguese (native)
-                                </li>
-                                <li class="languages__name">
-                                    <span class="languages__circle"></span>English (advanced)
-                                </li>
-                                <li class="languages__name">
-                                    <span class="languages__circle"></span>Spanish (intermediate)
-                                </li>
-                            </ul>
-                        </div>
-                    </section>
-                        
-
-                    <!--========== INTERESTS ==========-->
-                    <section class="interests section">
-                        <h2 class="section-title">Interests</h2>
-
-                        <div class="interests__container bd-grid">
-                            <div class="interests__content">
-                                <i class='bx bxs-joystick interests__icon'></i>
-                                <span class="interests__name">Retro Gaming</span>
-                            </div>
-                            <div class="interests__content">
-                                <i class='bx bxs-plane-alt interests__icon'></i>
-                                <span class="interests__name">Travel</span>
-                            </div>
-                            <div class="interests__content">
-                                <i class='bx bxl-tux interests__icon' ></i>
-                                <span class="interests__name">Linux</span>
-                            </div>
-                            <div class="interests__content">
-                                <i class='bx bx-code-alt interests__icon' ></i>
-                                <span class="interests__name">Development</span>
-                            </div>
-                        </div>
-                    </section>
-                </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class='bx bx-home nav__icon'></i>Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#profile" class="nav__link">
+                            <i class='bx bx-user nav__icon'></i>Profile
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#education" class="nav__link">
+                            <i class='bx bx-book nav__icon'></i>Education
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class='bx bx-receipt nav__icon'></i>Skills
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#experience" class="nav__link">
+                            <i class='bx bx-briefcase-alt nav__icon'></i>Experience
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#certificates" class="nav__link">
+                            <i class='bx bx-award nav__icon'></i>Certificates
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#references" class="nav__link">
+                            <i class='bx bx-link-external nav__icon'></i>Links
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </main>
 
-        <!--========== SCROLL TOP ==========-->
-        <a href="#" class="scrolltop" id="scroll-top">
-            <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
-        </a>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
+            </div>
+        </nav>
+    </header>
 
-        
-        <!--========== HTML2PDF ==========-->
-        <script src="assets/js/html2pdf.bundle.min.js"></script>
+    <main class="l-main bd-container">
+        <!-- All elements within this div, is generated in PDF -->
+        <div class="resume" id="area-cv">
+            <div class="resume__left">
+                <!--========== HOME ==========-->
+                <section class="home" id="home">
+                    <div class="home__container section bd-grid">
+                        <div class="home__data bd-grid">
+                            <img src="assets/img/eu.jpeg" alt="" class="home__img">
 
-        <!--========== MAIN JS ==========-->
-        <script src="assets/js/main.js"></script>
-    </body>
+                            <h1 class="home__title">LUCIANO <b>ROCHA</b></h1>
+                            <h3 class="home__profession">Head of AdOps &amp; Programmatic<br>Publisher Monetization | AdTech</h3>
+
+                            <div>
+                                <!-- Button to download your CV saved in the pdf folder. Available for mobile -->
+                                <a download="" href="assets/pdf/ResumeCv.pdf" class="home__button-movil">Download CV</a>
+                            </div>
+                        </div>
+
+                        <div class="home__address bd-grid">
+                            <span class="home__information">
+                                <i class='bx bx-map home__icon'></i> São Paulo, Brazil
+                            </span>
+                            <span class="home__information">
+                                <i class='bx bx-envelope home__icon'></i> rochas@gmail.com
+                            </span>
+                            <span class="home__information">
+                                <i class='bx bx-phone home__icon'></i> +55 (11) 98643-7830
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Theme change button -->
+                    <i class='bx bx-moon change-theme' title="Theme" id="theme-button"></i>
+
+                    <!-- Button to generate and download the pdf. Available for desktop. -->
+                    <i class='bx bx-download generate-pdf' title="Generate PDF" id="resume-button"></i>
+                </section>
+
+                <!--========== SOCIAL ==========-->
+                <section class="social section">
+                    <h2 class="section-title">SOCIAL</h2>
+
+                    <div class="social__container bd-grid">
+                        <a href="https://www.linkedin.com/in/luciano2000" target="_blank" class="social__link">
+                            <i class='bx bxl-linkedin-square social__icon'></i>
+                            @luciano2000
+                        </a>
+                        <a href="https://www.facebook.com/luciano2000" target="_blank" class="social__link">
+                            <i class='bx bxl-facebook social__icon'></i>
+                            @luciano2000
+                        </a>
+                        <a href="https://www.instagram.com/luciano2000" target="_blank" class="social__link">
+                            <i class='bx bxl-instagram social__icon'></i>
+                            @luciano2000
+                        </a>
+                        <a href="https://www.twitter.com/luciano2000" target="_blank" class="social__link">
+                            <i class='bx bxl-twitter social__icon'></i>
+                            @luciano2000
+                        </a>
+                    </div>
+                </section>
+
+                <!--========== PROFILE ==========-->
+                <section class="profile section" id="profile">
+                    <h2 class="section-title">Profile</h2>
+                    <p class="profile__description">Programmatic monetization specialist with 25+ years transforming digital inventory into revenue at scale. Reduced unfilled inventory from 40% to 3% at EXAME, implemented the first YouTube for Publishers (PRO player) in Brazil at CNN Brasil — generating 15% revenue growth from a brand-new product line — and drove a 30% conversion increase managing R$15M/year in programmatic media for Dell. Currently, as founder of AD TEC, delivering strategic AdOps consulting to 7+ publishers while developing a proprietary SaaS (OpenAI API + Google AdManager 360) in beta.</p>
+                </section>
+
+                <!--========== EDUCATION ==========-->
+                <section class="education section" id="education">
+                    <h2 class="section-title">Education</h2>
+
+                    <div class="education__container bd-grid">
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <span class="education__line"></span>
+                            </div>
+                            <div class="education__data bd-grid">
+                                <h3 class="education__title">BACHELOR OF COMPUTER SCIENCE</h3>
+                                <span class="education__studies">Centro Universitário FMU — São Paulo</span>
+                                <span class="education__year">2001 - 2004</span>
+                            </div>
+                        </div>
+
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <!-- <span class="education__line"></span> -->
+                            </div>
+                            <div class="education__data bd-grid">
+                                <h3 class="education__title">JAVASCRIPT / JAVA / CSS</h3>
+                                <span class="education__studies">Impacta Tecnologia (sponsored by UOL)</span>
+                                <span class="education__year">Complementary Training</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--========== SKILLS  ==========-->
+                <section class="skills section" id="skills">
+                    <h2 class="section-title">Skills</h2>
+
+                    <div class="skills__content bd-grid">
+                        <ul class="skills__data">
+                            <li class="skills__name"><span class="skills__circle"></span> Google AdManager 360</li>
+                            <li class="skills__name"><span class="skills__circle"></span> DV360</li>
+                            <li class="skills__name"><span class="skills__circle"></span> Google AdExchange</li>
+                            <li class="skills__name"><span class="skills__circle"></span> Header Bidding / Prebid.js</li>
+                            <li class="skills__name"><span class="skills__circle"></span> VAST · VPAID · SSAI</li>
+                            <li class="skills__name"><span class="skills__circle"></span> SSP · DSP · RTB</li>
+                        </ul>
+
+                        <ul class="skills__data">
+                            <li class="skills__name"><span class="skills__circle"></span> CPM Floor / Yield Optimization</li>
+                            <li class="skills__name"><span class="skills__circle"></span> Publisher Monetization</li>
+                            <li class="skills__name"><span class="skills__circle"></span> Revenue Operations</li>
+                            <li class="skills__name"><span class="skills__circle"></span> OpenAI API · n8n</li>
+                            <li class="skills__name"><span class="skills__circle"></span> JavaScript · PHP · HTML5</li>
+                            <li class="skills__name"><span class="skills__circle"></span> Google Tag Manager · GA4</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <div class="resume__right">
+                <!--========== EXPERIENCE ==========-->
+                <section class="experience section" id="experience">
+                    <h2 class="section-title">Experience</h2>
+
+                    <div class="experience__container bd-grid">
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">FOUNDER &amp; ADOPS CONSULTANT</h3>
+                                <span class="experience__company">05/2023 – Present | AD TEC</span>
+                                <p class="experience__description">Founded and operate a specialized AdOps and programmatic monetization consultancy serving 7+ publishers including Estado de Minas, UAI, Lance! and Infomoney. Developing proprietary SaaS in beta (OpenAI API + Google AdManager 360) with real-time performance dashboards and automated campaign alerts. Architect customized AdTech solutions — header bidding, floor pricing, SSP integration and unfilled inventory optimization.</p>
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">HEAD OF CS &amp; PUBLISHER ACQUISITION</h3>
+                                <span class="experience__company">05/2024 – 01/2025 | Dailymotion</span>
+                                <p class="experience__description">Sole commercial and technical point of contact for Brazil, prospecting and onboarding 30+ publishers — conducting player and SaaS demos from first contact through go-live. Implemented VAST/VPAID integrations between the player and publishers' ad servers, ensuring monetization compatibility and video fill rate performance.</p>
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">HEAD OF PROGRAMMATIC &amp; ADOPS</h3>
+                                <span class="experience__company">05/2022 – 05/2023 | EXAME</span>
+                                <p class="experience__description">Reduced unfilled inventory from 40% to 3% and increased viewability from 60% to 80%. Created the proprietary "Pushdown" format — sold per day at R$20K (listed at R$100K) — generating a new premium revenue line with no additional inventory cost. Managed a team of 3 AdOps analysts.</p>
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">OPEC MANAGER</h3>
+                                <span class="experience__company">07/2021 – 05/2022 | CNN Brasil</span>
+                                <p class="experience__description">Implemented YouTube for Publishers (PRO player) integrated with AdManager/AdExchange — a first in Brazil — creating a new video revenue line from scratch and generating 15% digital revenue growth. Managed integrated digital and TV campaign operations simultaneously.</p>
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">DIGITAL MEDIA MANAGER</h3>
+                                <span class="experience__company">03/2020 – 07/2021 | Wunderman Thompson</span>
+                                <p class="experience__description">Led DV360 implementation for Dell account (R$15M/year in programmatic media), increasing total conversions by 30% in 6 months via audience optimization, automated bidding and retargeting strategies. Negotiated Private Marketplace Deals (PMP) with premium publishers.</p>
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">HEAD OF COMMERCIAL OPERATIONS</h3>
+                                <span class="experience__company">11/2018 – 03/2020 | SupportComm</span>
+                                <p class="experience__description">Led AdOps team delivering video, display, audio and SVA campaigns via proprietary player for 2–3 telecom operators, monetizing zero-rating user base. Hired and trained a team of 4 AdOps analysts.</p>
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">DIRECTOR OF OPERATIONS &amp; PROGRAMMATIC</h3>
+                                <span class="experience__company">10/2017 – 11/2018 | NoBeta</span>
+                                <p class="experience__description">Built AdOps operations from scratch in a 9-person startup via Google AdManager and AdExchange. Developed a display CPM fallback solution (R$7 floor) for low fill-rate video inventory, creating a new monetization layer. Hired and trained a team of 3.</p>
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">ADOPS &amp; PROGRAMMATIC MANAGER</h3>
+                                <span class="experience__company">03/2016 – 10/2017 | Havas Worldwide Digital</span>
+                                <p class="experience__description">Managed tag implementation and trafficking for accounts including TIM and Reckitt, operating Sizmek as primary ad server in coordination with Havas France. Built internal PHP dashboard for performance reporting and creative preview, eliminating manual processes.</p>
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">SENIOR PROGRAMMATIC BUYER</h3>
+                                <span class="experience__company">05/2015 – 10/2015 | IgnitionOne</span>
+                                <p class="experience__description">Managed performance campaigns for Volkswagen and GM on IgnitionOne's proprietary BID platform. Applied scoring technology to segment audiences with highest conversion propensity, optimizing automotive campaign ROI in real time.</p>
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">ADOPS MANAGER</h3>
+                                <span class="experience__company">11/2014 – 04/2015 | Imovelweb</span>
+                                <p class="experience__description">Led AdOps team that scaled from 4 to 6 analysts. Structured Google AdManager with floor pricing rules and line item prioritization to maximize portal yield. Coordinated lead monitoring for major real estate developers Cyrela, MRV and Even.</p>
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">PRODUCT MANAGER</h3>
+                                <span class="experience__company">06/2014 – 11/2014 | aunica Digital Solutions</span>
+                                <p class="experience__description">Built the "Antecipo" monetization vertical from scratch with 15 active publishers. Exclusive Brazil representative for PubMatic and LiveIntent. Prospected and integrated R7, Catraca Livre and Cola da Web into the proprietary AdNetwork.</p>
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">ADOPS SUPERVISOR (Consulting)</h3>
+                                <span class="experience__company">01/2014 – 04/2014 | NZN Group</span>
+                                <p class="experience__description">Led programmatic implementation from scratch for NZN Group (Baixaki, Tecmundo, Tudo Gostoso), coordinating 3 analysts across São Paulo and Curitiba. Configured Google AdExchange in direct partnership with Google's team, building the complete programmatic stack.</p>
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <!-- <span class="experience__line"></span> -->
+                            </div>
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">ADOPS COORDINATOR</h3>
+                                <span class="experience__company">12/1998 – 10/2013 | UOL (15 years)</span>
+                                <p class="experience__description">Promoted from Support Analyst → AdOps Analyst → AdOps Coordinator at Brazil's largest digital portal. Led multiple AdServer migrations (DoubleClick DART 5.5 → DFP Premium) with no downtime. Managed a team of 6 analysts and co-developed the "Banner BG" special ad format using dynamic CSS/JavaScript.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--========== CERTIFICATES ==========-->
+                <section class="certificate section" id="certificates">
+                    <h2 class="section-title">Certificates</h2>
+
+                    <div class="certificate__container bd-grid">
+                        <div class="certificate__content">
+                            <h3 class="certificate__title">Google DV360 Certified</h3>
+                            <p class="certificate__description">Display &amp; Video 360 — Google certification for programmatic media buying and campaign management.</p>
+                        </div>
+
+                        <div class="certificate__content">
+                            <h3 class="certificate__title">DoubleClick AdExchange Certified</h3>
+                            <p class="certificate__description">Google AdExchange — certification covering programmatic selling, deal management and inventory monetization.</p>
+                        </div>
+
+                        <div class="certificate__content">
+                            <h3 class="certificate__title">DoubleClick AdManager 360 Certified</h3>
+                            <p class="certificate__description">Google AdManager 360 — certification covering ad serving, trafficking, reporting and yield optimization.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!--========== REFERENCES ==========-->
+                <section class="references section" id="references">
+                    <h2 class="section-title">Links</h2>
+
+                    <div class="references__container bd-grid">
+                        <div class="references__content bd-grid">
+                            <span class="references__subtitle">Consultancy</span>
+                            <h3 class="references__title">AD TEC</h3>
+                            <ul class="references__contact">
+                                <li><a href="https://ad.tec.br" target="_blank">ad.tec.br</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="references__content bd-grid">
+                            <span class="references__subtitle">Blog</span>
+                            <h3 class="references__title">Retrogamer Brasil</h3>
+                            <ul class="references__contact">
+                                <li><a href="https://retrogamerbrasil.com.br" target="_blank">retrogamerbrasil.com.br</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!--========== LANGUAGES ==========-->
+                <section class="languages section">
+                    <h2 class="section-title">Languages</h2>
+
+                    <div class="languages__container">
+                        <ul class="languages__content bd-grid">
+                            <li class="languages__name">
+                                <span class="languages__circle"></span>Portuguese (native)
+                            </li>
+                            <li class="languages__name">
+                                <span class="languages__circle"></span>English (full professional)
+                            </li>
+                            <li class="languages__name">
+                                <span class="languages__circle"></span>Spanish (intermediate)
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!--========== INTERESTS ==========-->
+                <section class="interests section">
+                    <h2 class="section-title">Interests</h2>
+
+                    <div class="interests__container bd-grid">
+                        <div class="interests__content">
+                            <i class='bx bxs-joystick interests__icon'></i>
+                            <span class="interests__name">Retro Gaming</span>
+                        </div>
+                        <div class="interests__content">
+                            <i class='bx bxs-plane-alt interests__icon'></i>
+                            <span class="interests__name">Aviation</span>
+                        </div>
+                        <div class="interests__content">
+                            <i class='bx bxl-tux interests__icon'></i>
+                            <span class="interests__name">Linux</span>
+                        </div>
+                        <div class="interests__content">
+                            <i class='bx bx-brain interests__icon'></i>
+                            <span class="interests__name">AI &amp; Physics</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+    </a>
+
+    <!--========== HTML2PDF ==========-->
+    <script src="assets/js/html2pdf.bundle.min.js"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>
