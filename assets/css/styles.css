@@ -186,6 +186,7 @@ body.scale-cv{
   hyphens: auto;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  line-height: 1.3;
 }
 
 .scale-cv .experience__content,
@@ -193,10 +194,21 @@ body.scale-cv{
 .scale-cv .certificate__content{
   page-break-inside: avoid;
   break-inside: avoid;
+  margin-bottom: 0.5rem;
 }
 
 .scale-cv .section{
   page-break-before: auto;
+  overflow: visible;
+}
+
+.scale-cv .resume{
+  overflow: visible;
+}
+
+.scale-cv .resume__left,
+.scale-cv .resume__right{
+  overflow: visible;
 }
 
 body{

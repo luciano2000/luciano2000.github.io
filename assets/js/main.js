@@ -101,16 +101,16 @@ let resumeButton = document.getElementById('resume-button');
 
 // Html2pdf options
 let opt = {
-    margin:       [5, 5, 5, 5],
+    margin:       10,
     filename:     'myResume.pdf',
-    image:        { type: 'jpeg', quality: 0.98 },
-    html2canvas:  { scale: 2, useCORS: true, letterRendering: true },
+    image:        { type: 'jpeg', quality: 0.95 },
+    html2canvas:  { scale: 2, useCORS: true, letterRendering: true, logging: false },
     jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
-    pagebreak:    { mode: ['avoid-all', 'css', 'legacy'] }
+    pagebreak:    { mode: ['avoid-all', 'css', 'legacy'], before: '.experience__content', avoid: ['img', '.home__img'] }
 }
 
 function generateResume(){
-    html2pdf(areaCv, opt);
+    html2pdf().set(opt).from(areaCv).save();
 }
 
 // When the button is clicked, it executes the three functions
