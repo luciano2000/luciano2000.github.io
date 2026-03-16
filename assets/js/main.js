@@ -101,12 +101,12 @@ let resumeButton = document.getElementById('resume-button');
 
 // Html2pdf options
 let opt = {
-    margin:       10,
+    margin:       [8, 8, 8, 8],
     filename:     'myResume.pdf',
     image:        { type: 'jpeg', quality: 0.95 },
-    html2canvas:  { scale: 2, useCORS: true, letterRendering: true, logging: false },
+    html2canvas:  { scale: 2, useCORS: true, letterRendering: true, logging: false, width: 595 },
     jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
-    pagebreak:    { mode: ['avoid-all', 'css', 'legacy'], before: '.experience__content', avoid: ['img', '.home__img'] }
+    pagebreak:    { mode: ['avoid-all', 'css', 'legacy'], avoid: ['img', '.home__img'] }
 }
 
 function generateResume(){
