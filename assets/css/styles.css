@@ -71,12 +71,12 @@ body.dark-theme{
 
 /*========== Font size variables to scale cv ==========*/
 body.scale-cv{
-  --h1-font-size: .875rem;
-  --h2-font-size: .875rem;
-  --h3-font-size: .813rem;
-  --normal-font-size: .75rem;
-  --small-font-size: .688rem;
-  --smaller-font-size: .625rem;
+  --h1-font-size: .813rem;
+  --h2-font-size: .813rem;
+  --h3-font-size: .75rem;
+  --normal-font-size: .688rem;
+  --small-font-size: .625rem;
+  --smaller-font-size: .563rem;
 }
 
 /*========== Generate PDF button ==========*/
@@ -113,9 +113,14 @@ body.scale-cv{
   margin-bottom: .75rem;
 }
 
+.scale-cv .resume{
+  grid-template-columns: 0.45fr 1fr;
+  max-width: 100%;
+}
+
 .scale-cv .resume__left,
 .scale-cv .resume__right{
-  padding: 0 1rem;
+  padding: 0 0.5rem;
 }
 
 .scale-cv .home__img{
@@ -145,7 +150,7 @@ body.scale-cv{
 .scale-cv .education__container,
 .scale-cv .experience__container,
 .scale-cv .certificate__container{
-  gap: 1rem;
+  gap: 0.75rem;
 }
 
 .scale-cv .education__time,
@@ -211,6 +216,23 @@ body.scale-cv{
 .scale-cv .resume__left,
 .scale-cv .resume__right{
   overflow: visible;
+}
+
+.scale-cv .experience__title,
+.scale-cv .education__title,
+.scale-cv .certificate__title{
+  font-size: var(--h3-font-size);
+  line-height: 1.2;
+}
+
+.scale-cv .experience__company,
+.scale-cv .education__studies{
+  font-size: var(--smaller-font-size);
+}
+
+.scale-cv .section-title{
+  letter-spacing: .25rem;
+  font-size: var(--h2-font-size);
 }
 
 body{

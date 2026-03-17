@@ -101,12 +101,18 @@ let resumeButton = document.getElementById('resume-button');
 
 // Html2pdf options
 let opt = {
-    margin:       [8, 8, 8, 8],
-    filename:     'myResume.pdf',
-    image:        { type: 'jpeg', quality: 0.95 },
-    html2canvas:  { scale: 2, useCORS: true, letterRendering: true, logging: false, width: 595 },
+    margin:       5,
+    filename:     'LucianoRocha-Resume.pdf',
+    image:        { type: 'jpeg', quality: 0.98 },
+    html2canvas:  {
+        scale: 2,
+        useCORS: true,
+        letterRendering: true,
+        logging: false,
+        windowWidth: 1024
+    },
     jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
-    pagebreak:    { mode: ['avoid-all', 'css', 'legacy'], avoid: ['img', '.home__img'] }
+    pagebreak:    { mode: ['avoid-all', 'css', 'legacy'], avoid: 'img' }
 }
 
 function generateResume(){
